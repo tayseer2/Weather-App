@@ -1,0 +1,144 @@
+body {
+  background-color: #094067;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 450px;
+  background-color: #fffffe;
+  text-align: center;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.search input {
+  width: 80%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 15px;
+  border: 2px solid #3da9fc;
+  font-size: 15px;
+}
+.search i {
+  width: 45px;
+  height: 45px;
+  background-color: #3da9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.search i:hover {
+  background-color: #094067;
+}
+
+.city-name {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px dashed #094067;
+  border-bottom: 2px dashed #094067;
+  margin: 10px 0 25px 0;
+}
+.status {
+  width: 150px;
+  padding-right: 30px;
+}
+
+.temperature {
+  font-size: 80px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.wind,
+.humidity,
+.visibility {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  background-color: #d8eefe;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #094067;
+}
+
+.humidity {
+  margin: 0 30px;
+}
+
+.wind i,
+.humidity i,
+.visibility i {
+  font-size: 30px;
+}
+.wind span:first-of-type {
+  padding: 15px 0 5px 0;
+}
+
+.humidity span:first-of-type {
+  padding: 15px 0 5px 0;
+}
+
+.visibility span:first-of-type {
+  padding: 15px 0 5px 0;
+}
+button {
+  background-color: white;
+  border: none;
+}
+.content {
+    display: none;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width:  80%;  
+  }
+  .city-name {
+    padding-top: 20px;
+    font-size: 25px;
+  }
+  .status {
+    width: 100px;
+    padding-right: 15px;
+  }
+  .temperature {
+    font-size: 50px;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+  }
+  .humidity {
+    margin: 5px 0;
+  }
+}
