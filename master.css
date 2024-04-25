@@ -110,6 +110,7 @@ button {
 @media (max-width: 767px) {
   .container {
     width: 85%;
+    margin-top: 45px;
   }
   .city-name {
     padding-top: 20px;
