@@ -79,7 +79,9 @@ body {
   margin-bottom: 15px;
 }
 
-.wind, .humidity, .visibility  {
+.wind,
+.humidity,
+.visibility {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +109,7 @@ button {
 
 @media (max-width: 767px) {
   .container {
-    width:  80%;  
+    width: 85%;
   }
   .city-name {
     padding-top: 20px;
@@ -122,14 +124,11 @@ button {
   }
   .box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  .wind, .humidity, .visibility  {
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 5px;
+  }
+  .visibility {
+    display: none;
   }
 }
