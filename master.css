@@ -103,9 +103,9 @@ button {
   background-color: white;
   border: none;
 }
-/* .content {
+.content {
   display: none;
-} */
+}
 
 @media (max-width: 767px) {
   .container {
